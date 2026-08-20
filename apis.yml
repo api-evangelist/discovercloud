@@ -26,6 +26,11 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/discovercl
 tags:
   - Cloud Services
   - Marketplace
+  - Software-as-a-Service
+  - Software Discovery
+tags_raw:
+  - Cloud Services
+  - Marketplace
   - SaaS
   - Software Discovery
 created: '2026-03-24'
