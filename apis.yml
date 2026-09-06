@@ -39,30 +39,40 @@ tags:
   - Marketplace
   - Software-as-a-Service
   - Software Discovery
+  - Reviews
+  - Business Software
 tags_raw:
   - Cloud Services
   - Marketplace
   - SaaS
   - Software Discovery
+  - Reviews
+  - Business Software
 created: '2026-03-24'
-modified: '2026-04-28'
+modified: '2026-09-06'
 specificationVersion: '0.23'
 apis: []
 common:
   - type: DomainSecurity
     url: security/discovercloud-domain-security.yml
+  - type: LLMsTxt
+    url: llms/discovercloud-llms.txt
+    name: DiscoverCloud llms.txt
+  - type: Plans
+    url: plans/discovercloud-plans-pricing.yml
+    name: DiscoverCloud Plans and Pricing
+  - type: RateLimits
+    url: rate-limits/discovercloud-rate-limits.yml
+    name: DiscoverCloud Rate Limits
   - url: https://www.discovercloud.com/
     name: DiscoverCloud Website
     type: Website
   - url: https://www.discovercloud.com/about-us
     name: About Us
     type: About
-  - url: https://www.discovercloud.com/categories
-    name: Software Categories
-    type: Categories
   - url: https://www.discovercloud.com/become-a-vendor
     name: Become a Vendor
-    type: Portal
+    type: SignUp
   - url: https://www.discovercloud.com/knowledge-base
     name: Knowledge Base
     type: Documentation
@@ -72,6 +82,9 @@ common:
   - url: https://www.discovercloud.com/contact-us
     name: Contact Us
     type: Contact
+  - url: https://www.discovercloud.com/contact-us
+    name: Contact DiscoverCloud Support
+    type: Support
   - url: https://www.discovercloud.com/terms-of-use
     name: Terms of Use
     type: TermsOfService
@@ -91,3 +104,34 @@ maintainers:
   - FN: Kin Lane
     url: http://apievangelist.com
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-06'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    DiscoverCloud is a B2B software-review marketplace with no developer program of any kind: there
+    is no api./docs./developers. subdomain (all NXDOMAIN), no GitHub organization, no package on npm,
+    PyPI, RubyGems or crates.io, and every conventional spec and /.well-known/ path on
+    www.discovercloud.com — /openapi.json, /swagger.json, /api-docs, /graphql, /llms.txt,
+    /.well-known/security.txt, /.well-known/agent-card.json — is swallowed by the ASP.NET catch-all
+    302 to /pagenotfound; the only JSON surface on the host is the unauthenticated, undocumented
+    ASP.NET Web API under /api/ that its own Angular front-end calls, which exposes no swagger,
+    no /Help page and no reference.
+  evidence:
+    - url: https://www.discovercloud.com/openapi.json
+      status: 302
+    - url: https://www.discovercloud.com/swagger/docs/v1
+      status: 302
+    - url: https://www.discovercloud.com/.well-known/agent-card.json
+      status: 302
+    - url: https://www.discovercloud.com/llms.txt
+      status: 302
+    - url: https://www.discovercloud.com/api/swagger.json
+      status: 404
+    - url: https://api.discovercloud.com/
+      status: 0
+  checked: '2026-09-06'

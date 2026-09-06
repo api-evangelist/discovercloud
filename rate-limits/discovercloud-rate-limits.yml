@@ -1,0 +1,21 @@
+generated: '2026-09-06'
+method: probed
+source: https://www.discovercloud.com/api/CommonDataService/CustomerTypesList
+note: >-
+  No rate limits are documented, because no API is documented. DiscoverCloud publishes no developer
+  portal, no API reference and no machine-readable contract. The Angular front-end does call an
+  unauthenticated ASP.NET Web API under www.discovercloud.com/api/ (observed 200 JSON on
+  /api/Categories/GetCategoriesViewModel, /api/CommonDataService/CustomerTypesList and
+  /api/CommonDataService/ProductPricingTypesList); its live responses carry NO RateLimit-*,
+  X-RateLimit-* or Retry-After headers and no documented quota, so an agent gets no runtime signal
+  at all. Recorded as an honest zero.
+limit_count: 0
+limits: []
+response_headers:
+  ratelimit_standard: absent
+  x_ratelimit: absent
+  retry_after: absent
+  observed_on: https://www.discovercloud.com/api/CommonDataService/CustomerTypesList
+  observed_status: 200
+  server: Microsoft-IIS/10.0
+exhaustion_status_code: null

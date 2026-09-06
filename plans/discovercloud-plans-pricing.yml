@@ -1,0 +1,32 @@
+generated: '2026-09-06'
+method: searched
+source: https://www.discovercloud.com/get-featured
+note: >-
+  DiscoverCloud publishes no priced plans of any kind — not for buyers, not for vendors, and there
+  is no API to price. The site is free to browse and search; its two commercial surfaces, "Become a
+  vendor" and "Get featured" (DiscoverCloud Premium / advertising), are both application forms that
+  end in "Apply Now / We will contact you shortly" with no tier, rate card, or currency shown.
+  /pricing, /premium and /advertise all 302 to the ASP.NET /pagenotfound catch-all. Recorded as an
+  honest zero rather than omitted.
+plan_count: 0
+currency: null
+plans: []
+commercial_surfaces:
+  - name: Become a vendor
+    url: https://www.discovercloud.com/become-a-vendor
+    status: 200
+    model: application form — no price published
+  - name: Get featured (DiscoverCloud Premium)
+    url: https://www.discovercloud.com/get-featured
+    status: 200
+    model: application form — no price published
+probes:
+  - url: https://www.discovercloud.com/pricing
+    status: 302
+    note: redirects to /pagenotfound?aspxerrorpath=/pricing
+  - url: https://www.discovercloud.com/premium
+    status: 302
+    note: redirects to /pagenotfound?aspxerrorpath=/premium
+  - url: https://www.discovercloud.com/advertise
+    status: 302
+    note: redirects to /pagenotfound?aspxerrorpath=/advertise

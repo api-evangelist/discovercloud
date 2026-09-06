@@ -1,0 +1,45 @@
+generated: '2026-09-06'
+method: probed
+source: live GET probes of /.well-known/* on every host this record knows
+note: >-
+  DiscoverCloud (Chekkt Limited) runs a single public host, www.discovercloud.com, on Azure App
+  Service / IIS. The apex discovercloud.com and chekkt.com resolve to 137.117.88.228 but time out
+  on connect, and no api./docs./developers. subdomain resolves, so www is the only probeable host.
+  Every /.well-known/ path returns a 302 to /pagenotfound?aspxerrorpath=... — the ASP.NET catch-all
+  — so NO well-known document is served. No WellKnown or SecurityTxt pointer is emitted: this file
+  records a measured absence, not a presence.
+hosts:
+  - host: www.discovercloud.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 302
+        file: null
+      - path: /.well-known/agent.json
+        status: 302
+        file: null
+unreachable_hosts:
+  - host: discovercloud.com
+    note: DNS A 137.117.88.228; TCP connect times out on 80 and 443 — apex is not served
+  - host: chekkt.com
+    note: DNS A 137.117.88.228; TCP connect times out — the former corporate domain is dark
+  - host: api.discovercloud.com
+    note: NXDOMAIN
+  - host: docs.discovercloud.com
+    note: NXDOMAIN
+  - host: developers.discovercloud.com
+    note: NXDOMAIN
