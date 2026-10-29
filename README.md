@@ -1,4 +1,4 @@
-# DiscoverCloud (discovercloud)
+# DiscoverCloud
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,46 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-DiscoverCloud (https://www.discovercloud.com/) is a B2B business software and SaaS product discovery platform that helps over 1 million business decision makers find and compare software tools and outsourced services. Founded in 2012 and operated by Chekkt Limited (Tel Aviv, Israel), DiscoverCloud aggregates crowd-sourced user ratings and reviews across dozens of software categories including CRM, Project Management, Marketing Automation, Business Intelligence, eCommerce, Invoicing, Help Desk, Security, and more. The platform serves buyers looking to evaluate and select software, as well as vendors seeking brand awareness and lead generation through the DiscoverCloud Premium marketplace listing program.
+Discover the best SaaS solutions and B2B services on the DiscoverCloud. Our B2B marketplace features an ever-growing number of SaaS solutions and outsourced services. Operated by Chekkt Limited, DiscoverCloud aggregates crowd-sourced ratings and reviews across software categories including CRM, Project Management, Marketing Automation, Business Intelligence, eCommerce, Invoicing, Help Desk, and Security.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/discovercloud/refs/heads/main/apis.yml)
+**Areas:** Cloud Services · Marketplace · Software-as-a-Service · Software Discovery · Reviews · Business Software
 
-## Scope
+## DiscoverCloud on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for DiscoverCloud is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/discovercloud/](https://apis.io/providers/discovercloud/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### Published properties
 
-- Cloud Services, Marketplace, SaaS, Software Discovery
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (1)
 
-- **Created:** 2026-03-24
-- **Modified:** 2026-04-28
+Authentication, trust centre, and vulnerability disclosure.
 
-## APIs
+- [Discovercloud Domain Security](https://apis.io/security/discovercloud/discovercloud-domain-security/)
 
-DiscoverCloud does not publish a public REST API or OpenAPI definition; the platform is consumer- and vendor-facing through its web marketplace, so no machine-readable API artifacts are tracked here.
+#### Plans and pricing (1)
 
-## Common Properties
+Published plans, tiers and prices.
+
+- [Discovercloud Plans Pricing](https://apis.io/plans/discovercloud/discovercloud-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Discovercloud Rate Limits](https://apis.io/rate-limits/discovercloud/discovercloud-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.discovercloud.com/)
-- [About Us](https://www.discovercloud.com/about-us)
-- [Software Categories](https://www.discovercloud.com/categories)
-- [Become a Vendor](https://www.discovercloud.com/become-a-vendor)
-- [Knowledge Base](https://www.discovercloud.com/knowledge-base)
+- [Documentation](https://www.discovercloud.com/knowledge-base)
+- [Sign up](https://www.discovercloud.com/become-a-vendor)
+- [Support](https://www.discovercloud.com/contact-us)
 - [Blog](https://www.discovercloud.com/blog/)
-- [Contact Us](https://www.discovercloud.com/contact-us)
-- [Terms of Use](https://www.discovercloud.com/terms-of-use)
-- [Privacy Policy](https://www.discovercloud.com/privacy-policy)
-- [X (Twitter)](https://twitter.com/discover_cloud)
-- [LinkedIn](https://www.linkedin.com/company/chekkt)
-- [Facebook](https://www.facebook.com/DiscoverCloud)
+- [Terms of service](https://www.discovercloud.com/terms-of-use)
+- [Privacy policy](https://www.discovercloud.com/privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 15.5** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/discovercloud/](https://apis.io/providers/discovercloud/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DiscoverCloud: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/discovercloud/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
